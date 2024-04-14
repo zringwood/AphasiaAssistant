@@ -1,10 +1,17 @@
-export default function TranscriptionManager(){
-    getLocalStream()
-    return (
-        <></>
-    )
-}
-function getLocalStream() {
+import { useState, useEffect, useRef } from "react";
+
+export default function useAudio(options) {
+    const ref = useRef();
+    
+  
+    useEffect(() => {
+     
+    }, [options]);
+  
+    return [ref, isIntersecting];
+  }
+
+  function getLocalStream() {
     navigator.mediaDevices
       .getUserMedia({ video: false, audio: true })
       .then((stream) => {
