@@ -1,10 +1,9 @@
 import './App.css';
+import PromptDisplay from './components/PromptDisplay';
 
 function App() {
   return (
-    <div>
-     
-    </div>
+    <PromptDisplay text="Hello World"/>
   );
 }
 
