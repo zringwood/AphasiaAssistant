@@ -1,5 +1,5 @@
 export default function InputDisplay({inputString}){
     return (
-        <input type="text" value={inputString} style={{flexGrow:"1"}}/>
+        <input type="text" defaultValue={inputString} style={{flexGrow:"1"}}/>
     )
 }

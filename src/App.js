@@ -3,7 +3,10 @@ import PromptDisplay from './components/PromptDisplay';
 import PromptDisplayLayout from './components/PromptDisplayLayout';
 import Header from "./components/Header";
 import InputDisplay from "./components/InputDisplay"
+import useAudio from './hooks/useAudio';
 function App() {
+  const stream = useAudio()
+
   return (
     <div style={{display:"flex", flexDirection:"column", height:"100vh"}}>
       <Header >

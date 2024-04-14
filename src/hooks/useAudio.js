@@ -1,14 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+//import { useState, useEffect, useRef } from "react";
 
 export default function useAudio(options) {
-    const ref = useRef();
-    
+   
   
-    useEffect(() => {
-     
-    }, [options]);
-  
-    return [ref, isIntersecting];
+    return getLocalStream()
   }
 
   function getLocalStream() {
@@ -16,10 +11,9 @@ export default function useAudio(options) {
       .getUserMedia({ video: false, audio: true })
       .then((stream) => {
         window.localStream = stream; // A
-        window.localAudio.srcObject = stream; // B
-        window.localAudio.autoplay = true; // C
       })
       .catch((err) => {
         console.error(`you got an error: ${err}`);
       });
+      return window.localStream
   }
