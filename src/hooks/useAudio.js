@@ -12,7 +12,8 @@ export default function useAudio(options) {
       .then((stream) => {
         window.localStream = stream; // A
       })
-      .catch((err) => {
+      .catch((err) => {   
+        
         console.error(`you got an error: ${err}`);
       });
       return window.localStream
