@@ -1,8 +1,8 @@
 import './App.css';
 import PromptDisplay from './components/PromptDisplay';
-import PromptDisplayLayout from './components/PromptDisplayLayout';
 import Header from "./components/Header";
 import InputDisplay from "./components/InputDisplay"
+import PromptController from './components/PromptController';
 function App() {
  
 
@@ -11,7 +11,7 @@ function App() {
       <Header >
         <InputDisplay inputString="I'm gay"/>
       </Header>
-    <PromptDisplayLayout>
+    <PromptController>
       <PromptDisplay text="Hello World"/>
       <PromptDisplay text="Hello"/>
       <PromptDisplay text="World"/>
@@ -24,7 +24,7 @@ function App() {
       <PromptDisplay text="Hello World"/>
       <PromptDisplay text="Hello"/>
       <PromptDisplay text="World"/>
-    </PromptDisplayLayout>
+    </PromptController>
     </div>
   );
 }
